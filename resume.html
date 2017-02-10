@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <title>Resume</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style1.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/logo.jpg" alt="icon">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+  <div id="main">
+    <div id="header" class="center-content clear-fix">
+      <ul id="topContacts" class="flex-box"></ul>
+      <a class="twitter-timeline" data-width="220" data-height="200" href="https://twitter.com/udacity">Tweets by udacity</a>
+    </div>
+    <div id="workExperience" class="gray">
+      <h2>Work Experience</h2>
+    </div>
+    <div id="projects">
+      <h2>Projects</h2>
+    </div>
+    <ul class="nav nav-tabs">
+         <h3>Github Links</h3>
+         <li role="presentation" class="active"><a href="https://github.com/prerit21/Animal_Card">Animal Card</a></li>
+         <li role="presentation"><a href="https://github.com/prerit21/udacity_portfolio">Online Portfoio</a></li>
+         <li role="presentation"><a href="https://github.com/prerit21/udacity_resume">Online Resume</a></li>
+    </ul>
+    <div id="education" class="gray">
+      <h2>Education</h2>
+    </div>
+    <div id="mapDiv">
+      <h2>Where I've Lived and Worked</h2>
+    </div>
+    <div id="lets-connect" class="dark-gray">
+      <h2 class="orange center-text">Let's Connect</h2>
+        <ul id="footerContacts" class="flex-box">
+      </ul>
+    </div>
+  </div>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/helper.js"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script src="js/resume.js"></script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDB7IJL-KpQJr9GrDQDMjDtd88c4HNNtqg&libraries=places"></script>
+  <script>
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('topContacts').style.display = "#000000";
+    }
+    if(document.getElementsByTagName('h1').length === 0) {
+      document.getElementById('header').style.display = "#000000";
+    }
+    if(document.getElementsByClassName('work-entry').length === 0) {
+      document.getElementById('workExperience').style.display = "#000000";
+    }
+    if(document.getElementsByClassName('project-entry').length === 0) {
+      document.getElementById('projects').style.display = "#000000";
+    }
+    if(document.getElementsByClassName('education-entry').length === 0) {
+      document.getElementById('education').style.display = "red";
+    }
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('lets-connect').style.display = "#000000";
+    }
+    if(document.getElementById('map') === null) {
+      document.getElementById('mapDiv').style.display = "#000000";
+    }
+  </script>
+</body>
+</html>
